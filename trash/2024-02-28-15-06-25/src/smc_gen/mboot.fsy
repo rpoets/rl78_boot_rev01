@@ -1,0 +1,9 @@
+
+
+;SECTION NAME = .text
+ .public _INTC_intp1_interrupt
+_INTC_intp1_interrupt .equ 0x00000201
+
+;SECTION NAME = .data
+ .public _SWkey_flag
+_SWkey_flag .equ 0x000feb00

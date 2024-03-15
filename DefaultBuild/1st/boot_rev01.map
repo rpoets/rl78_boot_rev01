@@ -1,0 +1,993 @@
+Renesas Optimizing Linker (W3.05.00 )             10-Mar-2024 23:01:28
+
+*** Options ***
+
+-subcommand=DefaultBuild\1st\boot_rev01.clnk
+-Input=DefaultBuild\1st\app.obj
+-Input=DefaultBuild\ftable.obj
+-Input=DefaultBuild\1st\r_cg_systeminit.obj
+-Input=DefaultBuild\1st\hdwinit.obj
+-Input=DefaultBuild\1st\r_bsp_init.obj
+-Input=DefaultBuild\stkinit.obj
+-Input=DefaultBuild\cstart.obj
+-Input=DefaultBuild\1st\r_bsp_common.obj
+-Input=DefaultBuild\r_bsp_common_ccrl.obj
+-Input=DefaultBuild\1st\mcu_clocks.obj
+-Input=DefaultBuild\1st\Pin.obj
+-Input=DefaultBuild\mboot.obj
+-Input=DefaultBuild\1st\Config_UART1.obj
+-Input=DefaultBuild\1st\Config_UART1_user.obj
+-Input=DefaultBuild\1st\r_cg_sau_common.obj
+-Input=DefaultBuild\1st\Config_INTC.obj
+-Input=DefaultBuild\1st\Config_INTC_user.obj
+-Input=DefaultBuild\1st\Config_PORT.obj
+-Input=DefaultBuild\1st\Config_PORT_user.obj
+-Input=DefaultBuild\1st\atask.obj
+-SECURITY_ID=00000000000000000000000000000000
+-FLASH_SECURITY_ID=FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+-DEVICE=C:\Program Files (x86)\Renesas Electronics\CS+\CC\Device\RL78\Devicefile\DR7F123FLG.DVF
+-NODEBug
+-NOOPtimize
+-OUtput=DefaultBuild\1st\boot_rev01.abs
+-LIBrary=C:\Program Files (x86)\Renesas Electronics\CS+\CC\CC-RL\V1.12.01\lib\rl78em4s99.lib
+-LIBrary=C:\Program Files (x86)\Renesas Electronics\CS+\CC\CC-RL\V1.12.01\lib\malloc_n.lib
+-LIBrary=C:\Program Files (x86)\Renesas Electronics\CS+\CC\CC-RL\V1.12.01\lib\rl78em4r.lib
+-OCDBG=A4
+-SECURITY_OPT_BYTE=FE
+-DEBUG_MONITOR=1FE00-1FFFF
+-USER_OPT_BYTE=EFE3E8
+-LISt=DefaultBuild\1st\boot_rev01.map
+-SHow=SYmbol,Reference,Xreference,Total_size,VECTOR,RELOCATION_ATTRIBUTE
+-VFINFO=DefaultBuild\boot_rev01_vfi.h
+-AUTO_SECTION_LAYOUT
+-STARt=fidm_version_id_n/04100,.const,.text,.RLIB,.SLIB,.textf,.constf,.data,.sdata/04110,.dataR,.bss/FEC00,.sdataR,.sbss/FFE80,bootpara_n/FFED0
+-ROm=.data=.dataR
+-ROm=.sdata=.sdataR
+-NOMessage
+-Total_size
+-NOLOgo
+-end
+
+*** Error information ***
+
+*** Mapping List ***
+
+SECTION                            START      END         SIZE   ALIGN ATTRIBUTE
+.vect
+                                  00000000  0000007f        80   0     OTHER
+.init_array
+                                  00000080  00000080         0   2     CONSTF
+.option_byte
+                                  000000c0  000000c4         5   1     OPT_BYTE
+.security_id
+                                  000000c6  000000d5        10   1     SECUR_ID
+.flash_security_id
+                                  000000d6  000000e5        10   1     FLASH_SECUR_ID
+.monitor1
+                                  000000e6  000000ef         a   1     DATA_AT
+.jtext_AT4000
+                                  00004000  000040cb        cc   1     TEXT_AT
+fidm_version_id_n
+                                  00004100  00004105         6   2     CONST
+.const
+                                  00004110  000041de        cf   2     CONST
+.text
+                                  000041df  000042dc        fe   1     TEXT
+.RLIB
+                                  000042dd  000045e1       305   1     TEXTF
+.SLIB
+                                  000045e2  00004b28       547   1     TEXTF
+.textf
+                                  00004b29  000051d5       6ad   1     TEXTF
+.constf
+                                  000051d6  000051d6         0   2     CONSTF
+.data
+                                  000051d6  000051d6         1   2     DATA
+.sdata
+                                  000051d8  000051d8         0   2     SDATA
+.monitor2
+                                  0001fe00  0001ffff       200   1     DATA_AT
+.dataR
+                                  000fec00  000fec00         1   2     DATA(R)
+.bss
+                                  000fec02  000fec0d         c   2     BSS
+.sdataR
+                                  000ffe80  000ffe80         0   2     SDATA(R)
+.sbss
+                                  000ffe80  000ffe80         0   2     SBSS
+bootpara_n
+                                  000ffed0  000ffed9         a   2     BSS
+
+*** Total Section Size ***
+
+RAMDATA SECTION:  00000017 Byte(s)
+ROMDATA SECTION:  00000385 Byte(s)
+PROGRAM SECTION:  000010c3 Byte(s)
+
+*** Symbol List ***
+
+SECTION=
+FILE=                               START        END    SIZE
+  SYMBOL                            ADDR        SIZE    INFO      COUNTS  OPT
+
+SECTION=.vect
+FILE=rlink_generates_05
+                                  00000000  0000007f        80
+
+SECTION=.option_byte
+FILE=rlink_generates_01
+                                  000000c0  000000c4         5
+
+SECTION=.security_id
+FILE=rlink_generates_03
+                                  000000c6  000000d5        10
+
+SECTION=.flash_security_id
+FILE=rlink_generates_04
+                                  000000d6  000000e5        10
+
+SECTION=.monitor1
+FILE=rlink_generates_02
+                                  000000e6  000000ef         a
+
+SECTION=.jtext_AT4000
+FILE=DefaultBuild\ftable.obj
+                                  00004000  000040cb        cc
+
+SECTION=fidm_version_id_n
+FILE=DefaultBuild\1st\atask.obj
+                                  00004100  00004105         6
+  _fidm_version_id
+                                  00004100         6   data ,g         0
+
+SECTION=.const
+FILE=DefaultBuild\1st\app.obj
+                                  00004110  00004144        35
+FILE=DefaultBuild\1st\r_bsp_common.obj
+                                  00004146  0000415d        18
+  _g_bsp_delay_time
+                                  00004146        18   data ,g         2
+FILE=DefaultBuild\1st\mcu_clocks.obj
+                                  0000415e  000041dd        80
+  _g_fih_hz
+                                  0000415e        80   data ,g         1
+FILE=DefaultBuild\1st\atask.obj
+                                  000041de  000041de         1
+  _illegal_Instruction@1@sw_reset
+                                  000041de         1   data ,l         1
+
+SECTION=.text
+FILE=DefaultBuild\cstart.obj
+                                  000041df  00004255        77
+  _start
+                                  000041df         0   none ,g         1
+  _exit
+                                  00004253         0   none ,g         1
+  _atexit
+                                  00004255         0   none ,g         0
+FILE=DefaultBuild\r_bsp_common_ccrl.obj
+                                  00004256  00004261         c
+  _delay_wait
+                                  00004256         0   none ,g         1
+  loop
+                                  00004256         0   none ,l         2
+  check
+                                  0000425d         0   none ,l         1
+  _exit
+                                  00004261         0   none ,l         0
+FILE=DefaultBuild\1st\Config_UART1_user.obj
+                                  00004262  000042d7        76
+  _r_Config_UART1_interrupt_send
+                                  00004262        21   func ,g         1
+  _r_Config_UART1_interrupt_receive@1
+                                  00004283        55   func ,l         0
+FILE=DefaultBuild\1st\Config_INTC_user.obj
+                                  000042d8  000042dc         5
+  _r_Config_INTC_intp1_interrupt
+                                  000042d8         5   func ,g         1
+
+SECTION=.RLIB
+FILE=memset
+                                  000042dd  000042ea         e
+  _memset
+                                  000042dd         0   none ,g         1
+FILE=_COM_llmul
+                                  000042eb  00004334        4a
+  __COM_llmul
+                                  000042eb         0   none ,g         1
+  __REL_llmul_addh
+                                  00004323         0   none ,g         2
+FILE=_COM_ulldiv
+                                  00004335  0000435e        2a
+  __COM_ulldiv
+                                  00004335         0   none ,g         3
+FILE=_COM_lmul
+                                  0000435f  00004379        1b
+  __COM_lmul
+                                  0000435f         0   none ,g         2
+FILE=_COM_mulul
+                                  0000437a  000043d6        5d
+  __COM_mulul
+                                  0000437a         0   none ,g         1
+FILE=_REL_lldiv
+                                  000043d7  000045dd       207
+  __REL_lldiv
+                                  000043f3         0   none ,g         1
+FILE=_COM_mului
+                                  000045de  000045e1         4
+  __COM_mului
+                                  000045de         0   none ,g         4
+
+SECTION=.SLIB
+FILE=printf_tiny
+                                  000045e2  00004662        81
+  _printf_tiny
+                                  000045e2        7d   func ,g         1
+  __REL_pc@1
+                                  0000465f         4   func ,l         2
+FILE=_REL_print_tiny
+                                  00004663  00004b1e       4bc
+  __REL_print_tiny
+                                  00004663       3fc   func ,g         1
+  __CommonCode@16
+                                  00004a5f         6   func ,l         5
+  __CommonCode@15
+                                  00004a65         6   func ,l         3
+  __CommonCode@13
+                                  00004a6b         a   func ,l         4
+  __CommonCode@12
+                                  00004a75        12   func ,l         2
+  __CommonCode@11
+                                  00004a87        1c   func ,l         2
+  __CommonCode@10
+                                  00004aa3        10   func ,l         2
+  __CommonCode@9
+                                  00004ab3         f   func ,l         2
+  __CommonCode@8
+                                  00004ac2         7   func ,l         2
+  __CommonCode@7
+                                  00004ac9         4   func ,l         3
+  __CommonCode@17
+                                  00004acd         8   func ,l         2
+  __CommonCode@6
+                                  00004ad5         7   func ,l         2
+  __CommonCode@14
+                                  00004adc         3   func ,l         2
+  __CommonCode@5
+                                  00004adf         3   func ,l         7
+  __CommonCode@4
+                                  00004ae2         9   func ,l         2
+  __CommonCode@3
+                                  00004aeb        1d   func ,l         5
+  __CommonCode@2
+                                  00004b08         5   func ,l         7
+  __CommonCode@1
+                                  00004b0d         7   func ,l         6
+  __CommonCode@0
+                                  00004b14         b   func ,l         2
+FILE=isdigit
+                                  00004b1f  00004b28         a
+  _isdigit
+                                  00004b1f         0   none ,g         1
+
+SECTION=.textf
+FILE=DefaultBuild\1st\app.obj
+                                  00004b29  00004b92        6a
+  _INTP1_check
+                                  00004b29         3   func ,g         0
+  _app_main
+                                  00004b2c        67   func ,g         1
+FILE=DefaultBuild\1st\r_cg_systeminit.obj
+                                  00004b93  00004b9e         c
+  _R_Systeminit
+                                  00004b93         c   func ,g         1
+FILE=DefaultBuild\1st\hdwinit.obj
+                                  00004b9f  00004ba8         a
+  _hdwinit
+                                  00004b9f         a   func ,g         1
+FILE=DefaultBuild\1st\r_bsp_init.obj
+                                  00004ba9  00004bc5        1d
+  _bsp_init_system
+                                  00004ba9        19   func ,g         1
+  _bsp_init_hardware
+                                  00004bc2         4   func ,g         1
+FILE=DefaultBuild\stkinit.obj
+                                  00004bc6  00004c09        44
+  _stkinit
+                                  00004bc6         0   none ,g         1
+  LSTINIT1
+                                  00004bd4         0   none ,l         1
+  LSTINIT2
+                                  00004bfe         0   none ,l         2
+  LSTINIT3
+                                  00004c09         0   none ,l         2
+FILE=DefaultBuild\1st\r_bsp_common.obj
+                                  00004c0a  00004e21       218
+  _R_BSP_GetFclkFreqHz
+                                  00004c0a         4   func ,g         0
+  _R_BSP_SoftwareDelay
+                                  00004c0e       214   func ,g         2
+FILE=DefaultBuild\1st\mcu_clocks.obj
+                                  00004e22  00004fd3       1b2
+  _get_fclk_freq_hz
+                                  00004e22       169   func ,g         2
+  _mcu_clock_setup
+                                  00004f8b        49   func ,g         1
+FILE=DefaultBuild\1st\Pin.obj
+                                  00004fd4  00004fe8        15
+  _R_Pins_Create
+                                  00004fd4        15   func ,g         0
+FILE=DefaultBuild\1st\Config_UART1.obj
+                                  00004fe9  000050f3       10b
+  _R_Config_UART1_Create
+                                  00004fe9        88   func ,g         2
+  _R_Config_UART1_Start
+                                  00005071        26   func ,g         2
+  _R_Config_UART1_Stop
+                                  00005097        1e   func ,g         0
+  _R_Config_UART1_Send
+                                  000050b5        27   func ,g         1
+  _R_Config_UART1_Receive
+                                  000050dc        18   func ,g         0
+FILE=DefaultBuild\1st\Config_UART1_user.obj
+                                  000050f4  0000513e        4b
+  _R_Config_UART1_Create_UserInit
+                                  000050f4         1   func ,g         1
+  _r_Config_UART1_callback_receiveend@1
+                                  000050f5         5   func ,l         1
+  _r_Config_UART1_callback_error@1
+                                  000050fa         6   func ,l         1
+  _r_Config_UART1_callback_softwareoverrun@1
+                                  00005100         1   func ,l         1
+  _dd_UART1_init
+                                  00005101         8   func ,g         0
+  _putchar
+                                  00005109        29   func ,g         2
+  _r_printf
+                                  00005132         d   func ,g         2
+FILE=DefaultBuild\1st\r_cg_sau_common.obj
+                                  0000513f  00005165        27
+  _R_SAU0_Create
+                                  0000513f         6   func ,g         0
+  _R_SAU1_Create
+                                  00005145         9   func ,g         1
+  _R_SAU0_Set_PowerOn
+                                  0000514e         6   func ,g         0
+  _R_SAU0_Set_PowerOff
+                                  00005154         6   func ,g         0
+  _R_SAU1_Set_PowerOn
+                                  0000515a         6   func ,g         0
+  _R_SAU1_Set_PowerOff
+                                  00005160         6   func ,g         0
+FILE=DefaultBuild\1st\Config_INTC.obj
+                                  00005166  0000519d        38
+  _R_Config_INTC_Create
+                                  00005166        2a   func ,g         1
+  _R_Config_INTC_INTP1_Start
+                                  00005190         7   func ,g         1
+  _R_Config_INTC_INTP1_Stop
+                                  00005197         7   func ,g         0
+FILE=DefaultBuild\1st\Config_INTC_user.obj
+                                  0000519e  0000519e         1
+  _R_Config_INTC_Create_UserInit
+                                  0000519e         1   func ,g         1
+FILE=DefaultBuild\1st\Config_PORT.obj
+                                  0000519f  000051af        11
+  _R_Config_PORT_Create
+                                  0000519f         d   func ,g         1
+  _R_Config_PORT_ReadPmnValues
+                                  000051ac         4   func ,g         0
+FILE=DefaultBuild\1st\Config_PORT_user.obj
+                                  000051b0  000051b0         1
+  _R_Config_PORT_Create_UserInit
+                                  000051b0         1   func ,g         1
+FILE=DefaultBuild\1st\atask.obj
+                                  000051b1  000051d5        25
+  _read_bl_session_key
+                                  000051b1         4   func ,g         1
+  _read_bl_app_mode
+                                  000051b5         4   func ,g         1
+  _sw_reset
+                                  000051b9         8   func ,g         1
+  _write_bl_session_key
+                                  000051c1         4   func ,g         1
+  _bl_app_mode_config
+                                  000051c5         4   func ,g         1
+  _ClearBootparaValue
+                                  000051c9         d   func ,g         1
+
+SECTION=.data
+FILE=DefaultBuild\1st\Config_INTC_user.obj
+                                  000051d6  000051d6         1
+
+SECTION=.monitor2
+FILE=rlink_generates_02
+                                  0001fe00  0001ffff       200
+
+SECTION=.dataR
+FILE=DefaultBuild\1st\Config_INTC_user.obj
+                                  000fec00  000fec00         1
+  _SWkey_flag_app
+                                  000fec00         1   data ,g         2
+
+SECTION=.bss
+FILE=DefaultBuild\1st\Config_UART1.obj
+                                  000fec02  000fec0b         a
+  _gp_uart1_tx_address
+                                  000fec02         2   data ,g         5
+  _g_uart1_tx_count
+                                  000fec04         2   data ,g         4
+  _gp_uart1_rx_address
+                                  000fec06         2   data ,g         3
+  _g_uart1_rx_count
+                                  000fec08         2   data ,g         4
+  _g_uart1_rx_length
+                                  000fec0a         2   data ,g         3
+FILE=DefaultBuild\1st\Config_UART1_user.obj
+                                  000fec0c  000fec0d         2
+  _Uart1_Status
+                                  000fec0c         2   data ,g         5
+
+SECTION=bootpara_n
+FILE=DefaultBuild\1st\atask.obj
+                                  000ffed0  000ffed9         a
+  _bootpara
+                                  000ffed0         a   data ,g         6
+
+Absolute value symbols
+FILE=DefaultBuild\mboot.obj
+  _INTC_intp1_interrupt
+                                  00000201         0   none ,g         1
+  _SWkey_flag
+                                  000feb00         0   none ,g         0
+FILE=rlink_generates_06
+  __s.textf
+                                  00004b29         0   none ,g         0
+  __e.textf
+                                  000051d6         0   none ,g         0
+  __s.const
+                                  00004110         0   none ,g         0
+  __e.const
+                                  000041df         0   none ,g         0
+  __s.jtext_AT4000
+                                  00004000         0   none ,g         0
+  __e.jtext_AT4000
+                                  000040cc         0   none ,g         0
+  __s.text
+                                  000041df         0   none ,g         0
+  __e.text
+                                  000042dd         0   none ,g         0
+  __s.constf
+                                  000051d6         0   none ,g         0
+  __e.constf
+                                  000051d6         0   none ,g         0
+  __s.data
+                                  000051d6         0   none ,g         0
+  __e.data
+                                  000051d7         0   none ,g         0
+  __s.sdata
+                                  000051d8         0   none ,g         0
+  __e.sdata
+                                  000051d8         0   none ,g         0
+  __s.bss
+                                  000fec02         0   none ,g         0
+  __e.bss
+                                  000fec0e         0   none ,g         0
+  __s.sbss
+                                  000ffe80         0   none ,g         0
+  __e.sbss
+                                  000ffe80         0   none ,g         0
+  __s.dataR
+                                  000fec00         0   none ,g         0
+  __e.dataR
+                                  000fec01         0   none ,g         0
+  __s.sdataR
+                                  000ffe80         0   none ,g         0
+  __e.sdataR
+                                  000ffe80         0   none ,g         0
+  __s.init_array
+                                  00000080         0   none ,g         0
+  __e.init_array
+                                  00000080         0   none ,g         0
+  __s.RLIB
+                                  000042dd         0   none ,g         0
+  __e.RLIB
+                                  000045e2         0   none ,g         0
+  __s.SLIB
+                                  000045e2         0   none ,g         0
+  __e.SLIB
+                                  00004b29         0   none ,g         0
+  __sbootpara_n
+                                  000ffed0         0   none ,g         0
+  __ebootpara_n
+                                  000ffeda         0   none ,g         0
+  __sfidm_version_id_n
+                                  00004100         0   none ,g         0
+  __efidm_version_id_n
+                                  00004106         0   none ,g         0
+  __s.option_byte
+                                  000000c0         0   none ,g         0
+  __e.option_byte
+                                  000000c5         0   none ,g         0
+  __s.monitor1
+                                  000000e6         0   none ,g         0
+  __e.monitor1
+                                  000000f0         0   none ,g         0
+  __s.monitor2
+                                  0001fe00         0   none ,g         0
+  __e.monitor2
+                                  00020000         0   none ,g         0
+  __s.security_id
+                                  000000c6         0   none ,g         0
+  __e.security_id
+                                  000000d6         0   none ,g         0
+  __s.flash_security_id
+                                  000000d6         0   none ,g         0
+  __e.flash_security_id
+                                  000000e6         0   none ,g         0
+  __s.vect
+                                  00000000         0   none ,g         0
+  __e.vect
+                                  00000080         0   none ,g         0
+  __RAM_ADDR_START
+                                  000fcf00         0   none ,g         0
+  __RAM_ADDR_END
+                                  000ffee0         0   none ,g         0
+  __STACK_ADDR_START
+                                  000fec00         0   none ,g         0
+  __STACK_ADDR_END
+                                  000fcf00         0   none ,g         1
+
+*** Unfilled Areas ***
+
+AREA                                START    END
+
+*** Delete Symbols ***
+
+SYMBOL                                SIZE    INFO
+
+*** Variable Vector Table List ***
+
+ADDRESS  SYMBOL/ADDRESS
+00       _start
+02       ffff
+04       
+06       
+08       
+0a       
+0c       
+0e       
+10       
+12       
+14       
+16       
+18       
+1a       
+1c       
+1e       
+20       
+22       
+24       
+26       
+28       
+2a       
+2c       
+2e       
+30       
+32       
+34       
+36       
+38       
+3a       
+3c       
+3e       
+40       
+42       
+44       
+46       
+48       
+4a       
+4c       
+4e       
+50       
+52       
+54       
+56       
+58       
+5a       
+5c       
+5e       
+60       
+62       
+64       
+66       
+68       
+6a       
+6c       
+6e       
+70       
+72       
+74       
+76       
+78       
+7a       
+7c       
+7e       
+
+*** Cross Reference List ***
+
+No   Unit Name   Global.Symbol   Location External Infomation
+---- ----------- --------------- -------- ---------------------
+0001 app
+     SECTION=.textf
+                 _INTP1_check
+                                 00004b29
+                 _app_main
+                                 00004b2c 0007(0000424f:.text)
+     SECTION=.const
+0002 ftable
+     SECTION=.jtext_AT4000
+0003 r_cg_systeminit
+     SECTION=.textf
+                 _R_Systeminit
+                                 00004b93 0004(00004ba2:.textf)
+0004 hdwinit
+     SECTION=.textf
+                 _hdwinit
+                                 00004b9f 0005(00004bc3:.textf)
+0005 r_bsp_init
+     SECTION=.textf
+                 _bsp_init_system
+                                 00004ba9 0007(000041eb:.text)
+                 _bsp_init_hardware
+                                 00004bc2 0007(0000424b:.text)
+0006 stkinit
+     SECTION=.textf
+                 _stkinit
+                                 00004bc6 0007(000041e7:.text)
+0007 cstart
+     SECTION=.text
+                 _start
+                                 000041df 0002(00004001:.jtext_AT4000)
+                 _exit
+                                 00004253 0007(00004254:.text)
+                 _atexit
+                                 00004255
+     SECTION=.textf
+     SECTION=.const
+     SECTION=.constf
+     SECTION=.data
+     SECTION=.sdata
+     SECTION=.bss
+     SECTION=.sbss
+     SECTION=.dataR
+     SECTION=.sdataR
+     SECTION=.init_array
+     SECTION=.RLIB
+     SECTION=.SLIB
+     SECTION=.dataR
+     SECTION=.sdataR
+0008 r_bsp_common
+     SECTION=.const
+                 _g_bsp_delay_time
+                                 00004146 0008(00004c4f:.textf)
+                                          0008(00004d1b:.textf)
+     SECTION=.textf
+                 _R_BSP_GetFclkFreqHz
+                                 00004c0a
+                 _R_BSP_SoftwareDelay
+                                 00004c0e 0001(00004b77:.textf)
+                                          0001(00004b84:.textf)
+0009 r_bsp_common_ccrl
+     SECTION=.text
+                 _delay_wait
+                                 00004256 0008(00004e1b:.textf)
+0010 mcu_clocks
+     SECTION=.const
+                 _g_fih_hz
+                                 0000415e 0010(00004e4b:.textf)
+     SECTION=.textf
+                 _get_fclk_freq_hz
+                                 00004e22 0008(00004c0b:.textf)
+                                          0008(00004c14:.textf)
+                 _mcu_clock_setup
+                                 00004f8b 0005(00004bbf:.textf)
+0011 Pin
+     SECTION=.textf
+                 _R_Pins_Create
+                                 00004fd4
+0012 mboot
+     SECTION=
+                 _INTC_intp1_interrupt
+                                 00000201 0001(00004b2a:.textf)
+                 _SWkey_flag
+                                 000feb00
+0013 Config_UART1
+     SECTION=.textf
+                 _R_Config_UART1_Create
+                                 00004fe9 0014(00005102:.textf)
+                                          0015(0000514b:.textf)
+                 _R_Config_UART1_Start
+                                 00005071 0001(00004b3b:.textf)
+                                          0014(00005106:.textf)
+                 _R_Config_UART1_Stop
+                                 00005097
+                 _R_Config_UART1_Send
+                                 000050b5 0014(00005117:.textf)
+                 _R_Config_UART1_Receive
+                                 000050dc
+     SECTION=.bss
+                 _gp_uart1_tx_address
+                                 000fec02 0013(000050c4:.textf)
+                                          0013(000050cd:.textf)
+                                          0013(000050d3:.textf)
+                                          0014(00004276:.text)
+                                          0014(0000427c:.text)
+                 _g_uart1_tx_count
+                                 000fec04 0013(000050c8:.textf)
+                                          0013(000050d6:.textf)
+                                          0014(00004266:.text)
+                                          0014(0000427f:.text)
+                 _gp_uart1_rx_address
+                                 000fec06 0013(000050f0:.textf)
+                                          0014(000042af:.text)
+                                          0014(000042b3:.text)
+                 _g_uart1_rx_count
+                                 000fec08 0013(000050e8:.textf)
+                                          0014(000042a8:.text)
+                                          0014(000042b6:.text)
+                                          0014(000042bc:.text)
+                 _g_uart1_rx_length
+                                 000fec0a 0013(000050ec:.textf)
+                                          0014(000042a5:.text)
+                                          0014(000042b9:.text)
+0014 Config_UART1_user
+     SECTION=.text
+                 _r_Config_UART1_interrupt_send
+                                 00004262 0002(0000407d:.jtext_AT4000)
+     SECTION=.textf
+                 _R_Config_UART1_Create_UserInit
+                                 000050f4 0013(0000506e:.textf)
+                 _dd_UART1_init
+                                 00005101
+                 _putchar
+                                 00005109 0021(00004614:.SLIB)
+                                          0021(00004660:.SLIB)
+                 _r_printf
+                                 00005132 0001(00004b4b:.textf)
+                                          0001(00004b5a:.textf)
+     SECTION=.bss
+                 _Uart1_Status
+                                 000fec0c 0014(000050f7:.textf)
+                                          0014(000050fd:.textf)
+                                          0014(00005111:.textf)
+                                          0014(0000511e:.textf)
+                                          0014(0000426e:.text)
+0015 r_cg_sau_common
+     SECTION=.textf
+                 _R_SAU0_Create
+                                 0000513f
+                 _R_SAU1_Create
+                                 00005145 0003(00004b98:.textf)
+                 _R_SAU0_Set_PowerOn
+                                 0000514e
+                 _R_SAU0_Set_PowerOff
+                                 00005154
+                 _R_SAU1_Set_PowerOn
+                                 0000515a
+                 _R_SAU1_Set_PowerOff
+                                 00005160
+0016 Config_INTC
+     SECTION=.textf
+                 _R_Config_INTC_Create
+                                 00005166 0003(00004b9c:.textf)
+                 _R_Config_INTC_INTP1_Start
+                                 00005190 0001(00004b3f:.textf)
+                 _R_Config_INTC_INTP1_Stop
+                                 00005197
+0017 Config_INTC_user
+     SECTION=.text
+                 _r_Config_INTC_intp1_interrupt
+                                 000042d8 0002(00004015:.jtext_AT4000)
+     SECTION=.textf
+                 _R_Config_INTC_Create_UserInit
+                                 0000519e 0016(0000518d:.textf)
+     SECTION=.dataR
+                 _SWkey_flag_app
+                                 000fec00 0001(00004b66:.textf)
+                                          0017(000042d9:.text)
+     SECTION=.data
+0018 Config_PORT
+     SECTION=.textf
+                 _R_Config_PORT_Create
+                                 0000519f 0003(00004b94:.textf)
+                 _R_Config_PORT_ReadPmnValues
+                                 000051ac
+0019 Config_PORT_user
+     SECTION=.textf
+                 _R_Config_PORT_Create_UserInit
+                                 000051b0 0018(000051a9:.textf)
+0020 atask
+     SECTION=fidm_version_id_n
+                 _fidm_version_id
+                                 00004100
+     SECTION=.textf
+                 _read_bl_session_key
+                                 000051b1 0001(00004b43:.textf)
+                 _read_bl_app_mode
+                                 000051b5 0001(00004b50:.textf)
+                 _sw_reset
+                                 000051b9 0001(00004b90:.textf)
+                 _write_bl_session_key
+                                 000051c1 0001(00004b62:.textf)
+                 _bl_app_mode_config
+                                 000051c5 0001(00004b34:.textf)
+                 _ClearBootparaValue
+                                 000051c9 0001(00004b2e:.textf)
+     SECTION=bootpara_n
+                 _bootpara
+                                 000ffed0 0020(000051b2:.textf)
+                                          0020(000051b6:.textf)
+                                          0020(000051ba:.textf)
+                                          0020(000051c2:.textf)
+                                          0020(000051c6:.textf)
+                                          0020(000051ce:.textf)
+     SECTION=.const
+0021 printf_tiny
+     SECTION=.SLIB
+                 _printf_tiny
+                                 000045e2 0014(0000513c:.textf)
+0022 memset
+     SECTION=.RLIB
+                 _memset
+                                 000042dd 0020(000051d1:.textf)
+0023 _COM_llmul
+     SECTION=.RLIB
+                 __COM_llmul
+                                 000042eb 0008(00004d06:.textf)
+                 __REL_llmul_addh
+                                 00004323 0023(00004308:.RLIB)
+                                          0023(0000431d:.RLIB)
+0024 _COM_ulldiv
+     SECTION=.RLIB
+                 __COM_ulldiv
+                                 00004335 0008(00004c8e:.textf)
+                                          0008(00004d37:.textf)
+                                          0008(00004dbb:.textf)
+0025 _REL_print_tiny
+     SECTION=.SLIB
+                 __REL_print_tiny
+                                 00004663 0021(0000463d:.SLIB)
+0026 _COM_lmul
+     SECTION=.RLIB
+                 __COM_lmul
+                                 0000435f 0023(00004304:.RLIB)
+                                          0023(00004319:.RLIB)
+0027 _COM_mulul
+     SECTION=.RLIB
+                 __COM_mulul
+                                 0000437a 0023(000042fb:.RLIB)
+0028 _REL_lldiv
+     SECTION=.RLIB
+                 __REL_lldiv
+                                 000043f3 0024(0000435c:.RLIB)
+0029 isdigit
+     SECTION=.SLIB
+                 _isdigit
+                                 00004b1f 0025(00004694:.SLIB)
+0030 _COM_mului
+     SECTION=.RLIB
+                 __COM_mului
+                                 000045de 0027(00004380:.RLIB)
+                                          0027(0000438f:.RLIB)
+                                          0027(000043a5:.RLIB)
+                                          0027(000043c2:.RLIB)
+0031 rlink_generates_01
+     SECTION=.option_byte
+0032 rlink_generates_02
+     SECTION=.monitor1
+     SECTION=.monitor2
+0033 rlink_generates_03
+     SECTION=.security_id
+0034 rlink_generates_04
+     SECTION=.flash_security_id
+0035 rlink_generates_05
+     SECTION=.vect
+0036 rlink_generates_06
+     SECTION=
+                 __s.vect
+                                 00000000
+                 __s.init_array
+                                 00000080
+                 __e.init_array
+                                 00000080
+                 __e.vect
+                                 00000080
+                 __s.option_byte
+                                 000000c0
+                 __e.option_byte
+                                 000000c5
+                 __s.security_id
+                                 000000c6
+                 __e.security_id
+                                 000000d6
+                 __s.flash_security_id
+                                 000000d6
+                 __s.monitor1
+                                 000000e6
+                 __e.flash_security_id
+                                 000000e6
+                 __e.monitor1
+                                 000000f0
+                 __s.jtext_AT4000
+                                 00004000
+                 __e.jtext_AT4000
+                                 000040cc
+                 __sfidm_version_id_n
+                                 00004100
+                 __efidm_version_id_n
+                                 00004106
+                 __s.const
+                                 00004110
+                 __e.const
+                                 000041df
+                 __s.text
+                                 000041df
+                 __e.text
+                                 000042dd
+                 __s.RLIB
+                                 000042dd
+                 __e.RLIB
+                                 000045e2
+                 __s.SLIB
+                                 000045e2
+                 __s.textf
+                                 00004b29
+                 __e.SLIB
+                                 00004b29
+                 __e.textf
+                                 000051d6
+                 __s.constf
+                                 000051d6
+                 __e.constf
+                                 000051d6
+                 __s.data
+                                 000051d6
+                 __e.data
+                                 000051d7
+                 __s.sdata
+                                 000051d8
+                 __e.sdata
+                                 000051d8
+                 __s.monitor2
+                                 0001fe00
+                 __e.monitor2
+                                 00020000
+                 __RAM_ADDR_START
+                                 000fcf00
+                 __STACK_ADDR_END
+                                 000fcf00 0007(000041e4:.text)
+                 __s.dataR
+                                 000fec00
+                 __STACK_ADDR_START
+                                 000fec00
+                 __e.dataR
+                                 000fec01
+                 __s.bss
+                                 000fec02
+                 __e.bss
+                                 000fec0e
+                 __s.sbss
+                                 000ffe80
+                 __e.sbss
+                                 000ffe80
+                 __s.sdataR
+                                 000ffe80
+                 __e.sdataR
+                                 000ffe80
+                 __sbootpara_n
+                                 000ffed0
+                 __ebootpara_n
+                                 000ffeda
+                 __RAM_ADDR_END
+                                 000ffee0

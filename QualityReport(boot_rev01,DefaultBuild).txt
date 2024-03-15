@@ -1,0 +1,279 @@
+QualityReport
+2024년 3월 15일 금요일 오후 1:30:28
+
+------ Start build(boot_rev01, DefaultBuild) ------
+------ Build ended(Error:0, Warning:0)(boot_rev01, DefaultBuild) ------
+
+
+--- SHA1 hash value of output files ---
+D:\RL78_F23_ws\boot_rev01\DefaultBuild\boot_rev01.abs: 6fe0efe5c508fbabc78a1692f1c03260b6311374
+D:\RL78_F23_ws\boot_rev01\DefaultBuild\boot_rev01.mot: 08a7fad41040a5cbaddfa0573cb57542607aa38e
+D:\RL78_F23_ws\boot_rev01\%BuildModelName%\flash4000_ffff.mot: 9643197a17bbb4780d2a0daec94b2c045d4f646b
+
+
+--- System Information ---
+*OS Version
+ Microsoft Windows 10 Enterprise (-, 10.0.18363, WOW64)
+*Language
+ 한국어(대한민국)
+*.NET Framework Version
+ Microsoft .NET Framework 4 [.NET 4.8 or later] (528040)
+
+--- Application Information ---
+*Product Name
+ CS+ for CC
+*Package Version
+ V8.10.00  [06 Jun 2023]
+*Version
+ V9.10.00.03 [23 May 2023]
+*Assembly Version
+ 3.12.10.1
+*Product License
+ 
+*Execution Place
+ C:\Program Files (x86)\Renesas Electronics\CS+\CC
+*Memory Usage
+ *Private Working Set
+  463 MB
+ *Number of GDI Objects
+  2423
+ *Number of USER Objects
+  1368
+ *Opened Files
+  14 editors, 14 files, 119 KB
+
+--- Build Tool Plug-in Information ---
+RH850 Build tool CC-RH Plug-in
+ *Version
+  V8.09.00.00 [07 Oct 2022]
+ *Assembly Version
+  1.1.10.12
+ *DLL File Name
+  BuildToolCCRH.dll
+RL78 Build tool CC-RL Plug-in
+ *Version
+  V8.09.00.01 [07 Oct 2022]
+ *Assembly Version
+  1.0.0.0
+ *DLL File Name
+  BuildToolCCRL.dll
+RX Build tool CC-RX Plug-in
+ *Version
+  V8.09.00.00 [07 Oct 2022]
+ *Assembly Version
+  3.12.10.1
+ *DLL File Name
+  BuildToolCCRX.dll
+RH850 Build tool GHS CCRH850 Plug-in
+ *Version
+  V1.08.00.00 [03 Apr 2023]
+ *Assembly Version
+  1.0.0.0
+ *DLL File Name
+  BuildToolGHSCCRH850.dll
+
+--- Debug Tool Plug-in Information ---
+Debugger Collection Plug-in
+ *Version
+  V8.10.00.02 [12 May 2023]
+ *Assembly Version
+  2.12.10.1
+ *DLL File Name
+  DebugToolCollection.dll
+
+--- Other Plug-in Information ---
+Code Generator Plug-in for RH850
+ *Version
+  V1.02.02.05 [25 May 2018]
+ *Assembly Version
+  1.0.0.0
+ *DLL File Name
+  CodeGeneratorRH850.dll
+Code Generator Plug-in
+ *Version
+  V4.08.06.01 [28 Oct 2022]
+ *Assembly Version
+  3.0.0.0
+ *DLL File Name
+  CodePart.dll
+Code Generator/PinView Plug-in
+ *Version
+  V2.10.07.02 [08 Nov 2021]
+ *Assembly Version
+  1.0.0.0
+ *DLL File Name
+  CodePart2.dll
+Debug Console Plug-in
+ *Version
+  V8.09.00.03 [24 Nov 2022]
+ *Assembly Version
+  8.9.0.0
+ *DLL File Name
+  DebugConsole.dll
+Quick and Effective tool solution - QE
+ *Version
+  V9.09.00.01 [18 Oct 2022]
+ *Assembly Version
+  1.15.10.16
+ *DLL File Name
+  InCarTools.dll
+Pin Configurator Plug-in
+ *Version
+  V1.54.01.01 [31 Jul 2014]
+ *Assembly Version
+  1.6.10.23
+ *DLL File Name
+  PinConfig.dll
+Program Analyzer Plug-in
+ *Version
+  V4.13.00.03 [24 May 2023]
+ *Assembly Version
+  3.12.11.9
+ *DLL File Name
+  ProgramAnalyzer.dll
+IronPython Console Plug-in
+ *Version
+  V1.46.00.02 [08 May 2023]
+ *Assembly Version
+  1.6.10.23
+ *DLL File Name
+  PythonConsole.dll
+Editor plug-in DLL
+ *Version
+  V1.19.00.01 [24 Oct 2022]
+ *Assembly Version
+  1.1.0.0
+ *DLL File Name
+  SEditor.dll
+Smart Configurator for RL78 Communication Plug-in
+ *Version
+  V1.00.08.03 [20 Nov 2023]
+ *Assembly Version
+  1.0.0.0
+ *DLL File Name
+  SmcCodePartRL78.dll
+Stack Usage Tracer
+ *Version
+  V1.05.00.02 [30 Jul 2014]
+ *Assembly Version
+  1.30.11.15
+ *DLL File Name
+  Stk.dll
+Update Manager Plug-in
+ *Version
+  V2.03.00.02 [29 Oct 2018]
+ *Assembly Version
+  1.13.6.20
+ *DLL File Name
+  Update.dll
+
+Debug Tool Common Interface
+ *Version
+  V8.10.00.02 [12 May 2023]
+ *Assembly Version
+  3.12.10.1
+ *DLL File Name
+  CommonDebuggerInterface.dll
+Device Information Common Interface
+ *Version
+  V9.10.00.01 [14 Apr 2023]
+ *Assembly Version
+  3.0.0.0
+ *DLL File Name
+  DeviceInformation.dll
+
+--- Main Project Information ---
+D:\RL78_F23_ws\boot_rev01\boot_rev01.mtpj
+Microcontroller Information
+ *R7F123FLG3xFB
+  *File Name: Version
+   RL78_Productlist.xml: V8.100000
+   R7F123FLG3xFB_common.xml: V1.00.00.XX.XX
+   DR7F123FLG.DVF: V1.00
+   -: -
+   -: -
+  
+
+Build Tool Information
+ *CC-RL
+   * Version of plug-in(*.dll)
+     V8.10.00.02 [08 May 2023]
+   * The Version of the Compiler Package
+     V1.12.01
+  
+ * The version of SMS Assembler
+   V1.00.00.01 [29 May 2020]
+ * The version of GREEN_DSP Structured Assembler 
+   V1.04.02
+ 
+
+Debug Tool Information
+ *RL78 E2 Lite
+  Debugger Library V8.10.00.02 [12 May 2023]
+  RL78 E2 Lite Executor V4.11a [14 Apr 2023]
+  E2 Lite 4100 A F/W V07.05
+  
+
+Other Tool Information
+ *None
+
+ *None
+
+ *None
+
+ *None
+
+ *Program Analyzer
+  *Version
+   V4.13.00.03 [24 May 2023]
+
+ *Smart Configurator
+ *None
+
+--- Subproject Information(1/1) ---
+D:\RL78_F23_ws\boot_rev01\boot\boot.mtsp
+Microcontroller Information
+ *R7F123FLG3xFB
+  *File Name: Version
+   RL78_Productlist.xml: V8.100000
+   R7F123FLG3xFB_common.xml: V1.00.00.XX.XX
+   DR7F123FLG.DVF: V1.00
+   -: -
+   -: -
+  
+
+Build Tool Information
+ *CC-RL
+   * Version of plug-in(*.dll)
+     V8.10.00.02 [08 May 2023]
+   * The Version of the Compiler Package
+     V1.12.01
+  
+ * The version of SMS Assembler
+   V1.00.00.01 [29 May 2020]
+ * The version of GREEN_DSP Structured Assembler 
+   V1.04.02
+ 
+
+Debug Tool Information
+ *RL78 E2 Lite
+  Debugger Library V8.10.00.02 [12 May 2023]
+  
+
+Other Tool Information
+ *None
+
+ *None
+
+ *None
+
+ *None
+
+ *Program Analyzer
+  *Version
+   V4.13.00.03 [24 May 2023]
+
+ *Smart Configurator
+ *None
+
+

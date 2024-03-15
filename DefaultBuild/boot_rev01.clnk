@@ -1,0 +1,58 @@
+-Input=DefaultBuild\app.obj
+-Input=DefaultBuild\ftable.obj
+-Input=DefaultBuild\r_cg_systeminit.obj
+-Input=DefaultBuild\hdwinit.obj
+-Input=DefaultBuild\r_bsp_init.obj
+-Input=DefaultBuild\stkinit.obj
+-Input=DefaultBuild\cstart.obj
+-Input=DefaultBuild\r_bsp_common.obj
+-Input=DefaultBuild\r_bsp_common_ccrl.obj
+-Input=DefaultBuild\mcu_clocks.obj
+-Input=DefaultBuild\Pin.obj
+-Input=DefaultBuild\mboot.obj
+-Input=DefaultBuild\Config_UART1.obj
+-Input=DefaultBuild\Config_UART1_user.obj
+-Input=DefaultBuild\r_cg_sau_common.obj
+-Input=DefaultBuild\Config_INTC.obj
+-Input=DefaultBuild\Config_INTC_user.obj
+-Input=DefaultBuild\Config_PORT.obj
+-Input=DefaultBuild\Config_PORT_user.obj
+-Input=DefaultBuild\atask.obj
+-SECURITY_ID=00000000000000000000000000000000
+-FLASH_SECURITY_ID=FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+-DEVICE=C:\Program Files (x86)\Renesas Electronics\CS+\CC\Device\RL78\Devicefile\DR7F123FLG.DVF
+-DEBug
+-NOCOmpress
+-NOOPtimize
+-OUtput=DefaultBuild\boot_rev01.abs
+-LIBrary=C:\Program Files (x86)\Renesas Electronics\CS+\CC\CC-RL\V1.12.01\lib\rl78em4s99.lib
+-LIBrary=C:\Program Files (x86)\Renesas Electronics\CS+\CC\CC-RL\V1.12.01\lib\malloc_n.lib
+-LIBrary=C:\Program Files (x86)\Renesas Electronics\CS+\CC\CC-RL\V1.12.01\lib\rl78em4r.lib
+-OCDBG=A4
+-SECURITY_OPT_BYTE=FE
+-DEBUG_MONITOR=1FE00-1FFFF
+-USER_OPT_BYTE=EFE3E8
+-LISt=DefaultBuild\boot_rev01.map
+-SHow=SYmbol,Reference,Xreference,Total_size,VECTOR,RELOCATION_ATTRIBUTE
+-AUTO_SECTION_LAYOUT
+-STARt=fidm_version_id_n/04100,.const,.text,.RLIB,.SLIB,.textf,.constf,.data,.sdata/04110,.dataR,.bss/FEC00,.sdataR,.sbss/FFE80,bootpara_n/FFED0
+-ROm=.data=.dataR
+-ROm=.sdata=.sdataR
+-NOMessage
+-STACk
+-Total_size
+-NOLOgo
+-end
+-Input=DefaultBuild\boot_rev01.abs
+-DEVICE=C:\Program Files (x86)\Renesas Electronics\CS+\CC\Device\RL78\Devicefile\DR7F123FLG.DVF
+-OUtput=DefaultBuild\boot_rev01.mot
+-FOrm=Stype
+-NOMessage
+-end
+-Input=DefaultBuild\boot_rev01.abs
+-DEVICE=C:\Program Files (x86)\Renesas Electronics\CS+\CC\Device\RL78\Devicefile\DR7F123FLG.DVF
+-OUtput=%BuildModelName%\flash4000_ffff.mot=4000-ffff
+-FOrm=Stype
+-NOMessage
+-exit
+
